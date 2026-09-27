@@ -529,7 +529,7 @@ resource "aws_vpc_security_group_egress_rule" "alb_to_service" {
 
 resource "aws_vpc_security_group_ingress_rule" "service_from_alb" {
   security_group_id            = aws_security_group.service.id
-  description                  = "From this service's load balancer only"
+  description                  = "From this service load balancer only"
   referenced_security_group_id = aws_security_group.alb.id
   from_port                    = var.container_port
   to_port                      = var.container_port
