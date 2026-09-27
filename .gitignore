@@ -1,0 +1,15 @@
+# Terraform working files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+
+# Your own settings: handles, boundary ARNs. Never commit.
+terraform.tfvars
+*.auto.tfvars
+
+# Capacity-test working directories (presenter/capacity-check.sh)
+.capacity-test/
